@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Omrails2</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>One Month Rails</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+		<%= link_to "Home", root_path %>
+		<%= link_to "About", about_path %>
 
+		<%= yield %>
+		<div class="footer">
+			<small>
+				<a href="http://www.onemonthrails.com">One Month Rails</a>
+				by Akinbobola Akinola
+			</small>
+		</div>
 </body>
 </html>
